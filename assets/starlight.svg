@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="70" viewBox="0 0 1200 70" role="img" aria-labelledby="title">
+  <title id="title">Stay curious. Keep making.</title>
+  <style>
+    .line{stroke:#c7d6d2}.copy{fill:#667b80}.star{fill:#b68c50}
+    @media(prefers-color-scheme:dark){.line{stroke:#364a55}.copy{fill:#9cb6ba}.star{fill:#e8c78f}}
+  </style>
+  <path class="line" d="M25 35h340m470 0h340"/>
+  <path class="star" d="m394 27 2 6 6 2-6 2-2 6-2-6-6-2 6-2zm412 0 2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/>
+  <text x="600" y="40" text-anchor="middle" class="copy" font-family="'SFMono-Regular',Consolas,monospace" font-size="14" letter-spacing="2">STAY CURIOUS. KEEP MAKING.</text>
+</svg>
