@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="480" viewBox="0 0 1200 480" role="img" aria-labelledby="title desc">
+  <title id="title">DoraZhang — a little studio in orbit</title>
+  <desc id="desc">把好奇心，做成用得上的小工具。A cream-colored astronaut cat floats above a small planet, surrounded by a camera, a music player, and slowly twinkling stars.</desc>
+  <defs>
+    <linearGradient id="sky" x2="1" y2="1"><stop stop-color="#111e36"/><stop offset=".58" stop-color="#1b2941"/><stop offset="1" stop-color="#3a3652"/></linearGradient>
+    <radialGradient id="halo"><stop stop-color="#93cfc0" stop-opacity=".18"/><stop offset="1" stop-color="#93cfc0" stop-opacity="0"/></radialGradient>
+    <linearGradient id="planet" x2="0.7" y2="1"><stop stop-color="#93cbbd"/><stop offset="1" stop-color="#416e75"/></linearGradient>
+    <linearGradient id="glass" x2="1" y2="1"><stop stop-color="#4a6d7c"/><stop offset="1" stop-color="#1e354d"/></linearGradient>
+    <linearGradient id="trail"><stop stop-color="#f7dba5" stop-opacity="0"/><stop offset="1" stop-color="#f7dba5"/></linearGradient>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".65" fill="#c2cfdd" opacity=".13"/></pattern>
+    <clipPath id="round"><rect width="1200" height="480" rx="24"/></clipPath>
+    <clipPath id="planetClip"><ellipse cx="921" cy="482" rx="201" ry="100"/></clipPath>
+    <g id="spark" fill="none" stroke="currentColor" stroke-linecap="round"><path d="M-6 0H6M0-6V6"/><path d="m-2-2 4 4m0-4-4 4" stroke-width=".5"/></g>
+  </defs>
+  <style>
+    text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif}
+    .mono{font-family:'SFMono-Regular',Consolas,'Liberation Mono',monospace}
+    .float{animation:float 7s ease-in-out infinite}
+    .camera{animation:drift 9s ease-in-out infinite}
+    .player{animation:drift 8s ease-in-out -3s infinite}
+    .twinkle{animation:twinkle 5s ease-in-out infinite}
+    .late{animation-delay:-2.5s}
+    .signal{animation:signal 4s ease-in-out infinite}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+    @keyframes drift{0%,100%{transform:translateY(0)}50%{transform:translateY(7px)}}
+    @keyframes twinkle{0%,100%{opacity:.35}50%{opacity:1}}
+    @keyframes signal{0%,100%{opacity:.5}50%{opacity:1}}
+    @media(prefers-reduced-motion:reduce){.float,.camera,.player,.twinkle,.signal{animation:none}}
+  </style>
+  <g clip-path="url(#round)">
+    <rect width="1200" height="480" fill="url(#sky)"/>
+    <rect width="1200" height="480" fill="url(#dots)"/>
+    <ellipse cx="923" cy="235" rx="315" ry="290" fill="url(#halo)"/>
+    <!-- The orbit is a quiet frame, not a divider. -->
+    <ellipse cx="920" cy="249" rx="249" ry="139" transform="rotate(-26 920 249)" fill="none" stroke="#abc9ca" stroke-opacity=".17"/>
+    <ellipse cx="920" cy="249" rx="204" ry="186" transform="rotate(-26 920 249)" fill="none" stroke="#abc9ca" stroke-opacity=".09" stroke-dasharray="3 9"/>
+    <g fill="#d3dfde">
+      <circle cx="49" cy="75" r="1.7"/><circle cx="342" cy="42" r="1.3"/><circle cx="600" cy="86" r="1.5"/>
+      <circle cx="657" cy="282" r="1.5"/><circle cx="737" cy="48" r="1.3"/><circle cx="1035" cy="40" r="1.8"/>
+      <circle cx="1142" cy="214" r="1.4"/><circle cx="1118" cy="409" r="1.5"/><circle cx="617" cy="422" r="1.3"/>
+      <circle cx="477" cy="389" r="1.2"/><circle cx="74" cy="396" r="1.4"/><circle cx="1028" cy="324" r="1.4"/>
+    </g>
+    <g color="#f8dba0" class="twinkle"><use href="#spark" x="666" y="127"/><use href="#spark" x="1112" y="291"/><use href="#spark" x="548" y="354"/></g>
+    <g color="#b5ded1" class="twinkle late"><use href="#spark" x="1096" y="66"/><use href="#spark" x="780" y="226"/><use href="#spark" x="551" y="58"/></g>
+    <g transform="translate(60 54)">
+      <rect width="247" height="31" rx="15.5" fill="#22394b" stroke="#506b75" stroke-width=".8"/>
+      <circle cx="17" cy="15.5" r="3.5" fill="#a9d9be" class="signal"/>
+      <text x="30" y="20" class="mono" font-size="11" letter-spacing="1.8" fill="#c6ded4">A LITTLE STUDIO IN ORBIT</text>
+    </g>
+    <text x="60" y="161" fill="#b9cfcf" font-size="28" letter-spacing=".4">Hi, I'm</text>
+    <text x="55" y="245" fill="#fff0d6" font-size="78" font-weight="750" letter-spacing="-4">DoraZhang<tspan fill="#edae96">.</tspan></text>
+    <path d="M62 270c95-8 188-8 288-3" stroke="#a6d7c4" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <text x="60" y="315" fill="#d3dfde" font-size="25" letter-spacing="1">把好奇心，做成用得上的小工具。</text>
+    <g class="mono" font-size="11" letter-spacing="2" fill="#a9c1c6">
+      <text x="61" y="379">CODE</text><circle cx="118" cy="375" r="2" fill="#e6b595"/>
+      <text x="135" y="379">LIGHT</text><circle cx="199" cy="375" r="2" fill="#a5d2bb"/>
+      <text x="216" y="379">SOUND</text><circle cx="280" cy="375" r="2" fill="#e4cc95"/>
+      <text x="297" y="379">LITTLE JOYS</text>
+    </g>
+    <text x="60" y="445" class="mono" font-size="10" letter-spacing="2" fill="#88a3af">DORA-Z / OPEN-SOURCE EXPLORATIONS</text>
+    <!-- Small photo camera. -->
+    <g class="camera">
+      <g transform="translate(1015 102) rotate(15)">
+        <path d="M-10 6Q-43-25-11-38" fill="none" stroke="#a1c9c4" stroke-opacity=".5" stroke-width="2"/>
+        <rect x="-10" y="-10" width="93" height="64" rx="13" fill="#e7c6a5" stroke="#172c41" stroke-width="3"/>
+        <path d="M6-11v-8h23v8" fill="#e7c6a5" stroke="#172c41" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M-8 7h89v31H-8" fill="#b97668"/>
+        <circle cx="40" cy="22" r="25" fill="#e9d4b6" stroke="#172c41" stroke-width="3"/>
+        <circle cx="40" cy="22" r="18" fill="#263e50"/>
+        <circle cx="40" cy="22" r="11" fill="#4a7c80"/>
+        <circle cx="35" cy="17" r="4" fill="#b4ddd1"/>
+        <rect x="62" y="-2" width="12" height="6" rx="2" fill="#fff1cf"/>
+      </g>
+    </g>
+    <!-- A tiny retro music player. -->
+    <g class="player">
+      <g transform="translate(713 290) rotate(-15)">
+        <path d="M37 4c-9-45 22-67 42-60" fill="none" stroke="#c1d9c9" stroke-width="2.2"/>
+        <rect width="74" height="114" rx="14" fill="#eddfbd" stroke="#172c41" stroke-width="3"/>
+        <rect x="10" y="12" width="54" height="37" rx="4" fill="#294a59"/>
+        <g fill="#b6dec8"><rect x="20" y="27" width="4" height="13" rx="1"/><rect x="28" y="21" width="4" height="19" rx="1"/><rect x="36" y="31" width="4" height="9" rx="1"/><rect x="44" y="24" width="4" height="16" rx="1"/><rect x="52" y="29" width="3" height="11" rx="1"/></g>
+        <circle cx="37" cy="80" r="23" fill="#fcf2d9"/>
+        <circle cx="37" cy="80" r="9" fill="#cebfa3"/>
+        <path d="m35 61 5 3-5 3z" fill="#667d7c"/>
+        <circle cx="81" cy="-55" r="5" fill="#eecdb0"/>
+      </g>
+    </g>
+    <!-- Cat astronaut, with a static readable resting pose. -->
+    <g class="float">
+      <path d="M948 297c57 14 41 59 14 57-17-1-7-21-21-24" fill="none" stroke="#e9c8a2" stroke-width="14" stroke-linecap="round"/>
+      <path d="m864 278-22 29q-8 13 4 19t21-6l19-22m53-25 24 17q13 11 23 0t-7-22l-24-15" fill="#e9e3cd" stroke="#1b3447" stroke-width="3" stroke-linejoin="round"/>
+      <path d="m874 320-3 31q0 14 14 14t17-12l7-28m11-1 9 27q6 14 19 10t11-18l-10-28" fill="#e9e3cd" stroke="#1b3447" stroke-width="3"/>
+      <path d="M880 260q33-22 65 0l13 52q-37 27-87 2z" fill="#f4ead4" stroke="#1b3447" stroke-width="3"/>
+      <path d="M876 303q40 16 77-1" fill="none" stroke="#a9c2bb" stroke-width="7"/>
+      <rect x="894" y="273" width="39" height="27" rx="7" fill="#8fbeb5" stroke="#31566a" stroke-width="2"/>
+      <circle cx="905" cy="284" r="3" fill="#f9e2a8"/><path d="M915 282h10m-10 6h7" stroke="#31566a" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="909" cy="215" r="64" fill="#eae4d2" stroke="#19364b" stroke-width="3"/>
+      <circle cx="909" cy="215" r="53" fill="url(#glass)" stroke="#9cbbb7" stroke-width="2"/>
+      <path d="m873 225 3-47 22 16q12-4 23 0l22-16 3 47q-3 29-37 29t-36-29" fill="#f3d7ae" stroke="#20394c" stroke-width="2.5" stroke-linejoin="round"/>
+      <path d="m881 187 11 11-12 5zm54 0-11 11 12 5z" fill="#d99589"/>
+      <path d="M887 222q5-7 10 0m23 0q5-7 10 0" fill="none" stroke="#2c4351" stroke-width="3" stroke-linecap="round"/>
+      <path d="m905 229 4 4 4-4m-4 4q-5 7-10 1m10-1q5 7 10 1" fill="none" stroke="#6e5753" stroke-width="2" stroke-linecap="round"/>
+      <ellipse cx="885" cy="232" rx="6" ry="3" fill="#e3a38e"/><ellipse cx="933" cy="232" rx="6" ry="3" fill="#e3a38e"/>
+      <path d="M867 204q4-25 27-33" fill="none" stroke="#f1fff4" stroke-opacity=".65" stroke-width="4" stroke-linecap="round"/>
+      <path d="M943 233q-2 11-10 17" fill="none" stroke="#d5eee5" stroke-opacity=".4" stroke-width="3" stroke-linecap="round"/>
+      <rect x="842" y="209" width="12" height="26" rx="5" fill="#91b8af" stroke="#1b3447" stroke-width="2"/>
+      <rect x="964" y="209" width="12" height="26" rx="5" fill="#91b8af" stroke="#1b3447" stroke-width="2"/>
+      <path d="m965 207 8-24" stroke="#b7d2c3" stroke-width="2"/><circle cx="974" cy="181" r="4" fill="#e9c58b" class="signal"/>
+    </g>
+    <!-- A softly striped little world. -->
+    <ellipse cx="921" cy="482" rx="201" ry="100" fill="url(#planet)"/>
+    <g clip-path="url(#planetClip)" fill="none" stroke="#c7e0c4" stroke-opacity=".2" stroke-width="15">
+      <path d="M723 441q110-43 185 11t220 10"/><path d="M748 493q61-23 151 10t197 1"/>
+    </g>
+    <ellipse cx="940" cy="437" rx="21" ry="7" fill="#426f74" opacity=".4"/><ellipse cx="847" cy="417" rx="12" ry="5" fill="#426f74" opacity=".3"/>
+    <path d="M793 406q-45 44 40 44t188-32q111-54 55-41" fill="none" stroke="#d9cba2" stroke-width="2" opacity=".6"/>
+    <circle cx="1074" cy="378" r="5" fill="#f3d69a"/>
+    <path d="m826 94 35-11" stroke="url(#trail)" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="861" cy="83" r="2" fill="#f7dba5"/>
+    <text x="1057" y="451" class="mono" font-size="9" letter-spacing="2" fill="#bfd5cd" transform="rotate(-90 1057 451)">STAY CURIOUS</text>
+  </g>
+</svg>
